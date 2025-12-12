@@ -1,0 +1,24 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd ~/apps/miRedSocial/miRedSocial
+            git pull
+            source ../venv/bin/activate
+            pkill gunicorn || true
+            gunicorn miRedSocial.wsgi:application --bind 127.0.0.1:8000 --daemon
