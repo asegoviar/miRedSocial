@@ -21,4 +21,4 @@ jobs:
             git pull
             source ../venv/bin/activate
             pkill gunicorn || true
-            gunicorn miRedSocial.wsgi:application --bind 127.0.0.1:8000 --daemon
+            gunicorn miRedSocial.wsgi:application --bind 0.0.0.0:8000 --daemon
