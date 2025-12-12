@@ -16,7 +16,7 @@ class LoginPageTest(TestCase):
         Test 2:
         La ruta /login responde con HTTP 200.
         """
-        response = self.client.get("/login")
+        response = self.client.get("/login/")
         self.assertEqual(response.status_code, 200)
 
 class LoginTemplateTest(TestCase):
