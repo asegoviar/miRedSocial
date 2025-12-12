@@ -1,3 +1,0 @@
-profile_id,user_id,username,bio,birthdate,is_private,created_at,updated_at
-1,2,francisco,Ingeniero Mecatronico de la PUCC,2004-07-03,True,2025-12-02 07:31:04.364919+00:00,2025-12-02 16:35:13.184249+00:00
-2,3,wilfredo,,,False,2025-12-02 07:34:56.504817+00:00,2025-12-02 07:34:56.504817+00:00
