@@ -1,0 +1,4 @@
+id,username,email,first_name,last_name,password_hash,is_active,is_staff,is_superuser
+1,alexander,afsegovia@pucp.edu.pe,,,pbkdf2_sha256$1000000$cn0jgM1E4psrgP0fECLnaq$c1fp9jNyzC1WWa4uH7msBwiVQYbyrjEWr+UvEF9ZCq4=,True,True,True
+2,francisco,fsegovia2497@gmail.com,Alexander,Segovia,pbkdf2_sha256$1000000$tA0jV9xI1hK3S9UbdbpbCp$2QlaG9I2W5Xouu6xZWLblQ3nTVqE5YILxIZoGj+itqs=,True,True,True
+3,wilfredo,wilfredo@gmail.com,,,pbkdf2_sha256$1000000$M5tuyvK59iffR5RRQRmZh7$lo0eCqG4x3KMO6XD/6wNjziavlT1jAsvQVgYu4Mtsys=,True,True,True
