@@ -39,3 +39,5 @@ class PostSerializer(serializers.ModelSerializer):
             "updated_at",
             "author",
         ]
+
+# Comentario de prueba
